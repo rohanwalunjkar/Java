@@ -1,0 +1,67 @@
+import java.util.Scanner;
+import java.lang.*;
+
+class Hotel
+{
+
+public static void main(String [] args)
+{	
+	
+Scanner sc=new Scanner(System.in);
+
+int sum=0;
+boolean b=false;
+do
+{
+System.out.println("Menu");
+System.out.println("1.Dosa:50Rs");
+System.out.println("2.Samosa:20Rs");
+System.out.println("3.Idli:20Rs");
+System.out.println("4.POha:20Rs");
+System.out.println("5.Cake:10Rs");
+System.out.println("6.Exit");
+System.out.println("Enter Your Item");
+
+int ch=sc.nextInt();
+
+switch(ch)
+{
+	case 1:
+			{
+				sum+=50;
+			}
+	case 2:
+			{
+				sum+=20;
+			}
+	case 3:
+			{
+				sum+=20;
+			}
+	case 4:
+			{
+				sum+=20;
+			}	
+	case 5:
+			{
+				sum+=10;
+			}
+	case 6:
+			{
+				System.out.println("Your Order is Confirmed");
+				b=true;
+			}
+
+
+}
+
+
+
+}while(!b);
+
+		System.out.println("Your Bill Amount is"+sum);
+
+
+	sc.close();
+}
+}
